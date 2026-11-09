@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Free Nusuk Keys Referral Codes - Invite codes ready for copy. Get free keys for Umrah draws!">
+    <title>Free Nusuk Keys - Free Referral Codes</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Overlay -->
+    <div class="bg-overlay"></div>
+
+    <div class="container">
+        <!-- Top Navigation & Language Switcher -->
+        <nav class="top-nav">
+            <div class="brand"><i class="fa-solid fa-kaaba"></i> Nusuk Keys</div>
+            <div class="lang-switcher">
+                <button onclick="setLanguage('en')" class="lang-btn active" id="btn-en">🇬🇧 English</button>
+                <button onclick="setLanguage('bn')" class="lang-btn" id="btn-bn">🇧🇩 বাংলা</button>
+                <button onclick="setLanguage('ar')" class="lang-btn" id="btn-ar">🇸🇦 العربية</button>
+            </div>
+        </nav>
+
+        <header>
+            <h1 id="main-title">🕌 Free Nusuk Keys</h1>
+            <p class="subtitle" id="main-subtitle">
+                Free Referral Codes for Umrah Keys - Use any code to get +1 Key for draws! You can use as many codes as you like, there is no limit.
+            </p>
+        </header>
+
+        <!-- Hadith Banner -->
+        <section class="hadith-card">
+            <div class="hadith-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="hadith-text" id="hadith-text">
+                "Whoever guides to good gets the same reward as the one who does it."
+            </p>
+            <span class="hadith-ref" id="hadith-ref">— Sahih Muslim 1893</span>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stat-box">
+                <div class="stat-number" id="total-codes">1,498</div>
+                <div class="stat-label" id="lbl-total-codes">Total Codes Available</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">100%</div>
+                <div class="stat-label" id="lbl-free">Free & Unlimited</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="stat-label" id="lbl-verified">Verified Working</div>
+            </div>
+        </section>
+
+        <!-- User Submit Code Section -->
+        <section class="submit-card">
+            <h3 id="submit-title"><i class="fa-solid fa-plus-circle"></i> Share Your Nusuk Code</h3>
+            <p id="submit-desc">Help the community! Add your referral code below to get free keys when others use it.</p>
+            <div class="submit-form">
+                <input type="text" id="user-code-input" placeholder="e.g. NG-03Z0x0pt" maxlength="15">
+                <button onclick="submitUserCode()" class="submit-btn" id="btn-submit-code">
+                    <i class="fa-solid fa-paper-plane"></i> Share Code
+                </button>
+            </div>
+            <div id="submit-msg" class="submit-msg"></div>
+        </section>
+
+        <!-- Instructions -->
+        <section class="instructions">
+            <h3 id="inst-title"><i class="fa-solid fa-list-check"></i> How to Use These Codes</h3>
+            <ul id="inst-list">
+                <li>Open the Free Nusuk Keys app on your phone.</li>
+                <li>Navigate to <strong>"Start the Challenge" → "Keys" → "Add code"</strong>.</li>
+                <li>Copy any code below and paste it in the app.</li>
+                <li>Each valid code gives you +1 Key for the Umrah draw!</li>
+                <li>Good luck with your Umrah journey! May Allah accept it. 🤲</li>
+            </ul>
+        </section>
+
+        <!-- Controls: Page Jump -->
+        <section class="controls">
+            <div class="jump-box">
+                <label for="jump-input" id="lbl-jump">Jump to Page:</label>
+                <input type="number" id="jump-input" min="1" placeholder="Page #" onchange="jumpToPage()" onkeyup="if(event.key==='Enter') jumpToPage()">
+                <button onclick="jumpToPage()" class="jump-btn" id="btn-go">Go</button>
+            </div>
+
+            <div class="pagination-controls">
+                <button id="prev-btn" class="page-btn" onclick="changePage(-1)"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+                <span id="page-info" class="page-info">Page 1 of 30</span>
+                <button id="next-btn" class="page-btn" onclick="changePage(1)">Next <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Codes Grid -->
+        <section id="codes-container" class="codes-container">
+            <!-- Dynamic Code Cards -->
+        </section>
+
+        <!-- Donation Section -->
+        <section class="donation-card">
+            <h3 id="donate-title"><i class="fa-solid fa-hand-holding-heart"></i> Support & Community Donation</h3>
+            <p id="donate-desc">Help us maintain this website free for everyone. Scan or click below to connect with us on Messenger.</p>
+            <div class="qr-box">
+                <div class="qr-placeholder" onclick="openMessenger()">
+                    <i class="fa-solid fa-qrcode fa-4x"></i>
+                    <p id="qr-label">Click to Donate / Contact via Messenger</p>
+                </div>
+            </div>
+            <a href="https://m.me/mriimran.m" target="_blank" class="donate-btn">
+                <i class="fa-brands fa-facebook-messenger"></i> <span id="btn-msg-text">Message on Facebook</span>
+            </a>
+        </section>
+
+        <!-- Footer Links with Icons -->
+        <footer class="footer">
+            <h3 id="footer-connect">Connect With Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/mriimran.m" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+                <a href="https://github.com/MRIIMRAN" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.kylinbd.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fa-solid fa-globe"></i> www.kylinbd.com
+                </a>
+            </div>
+            <p class="copyright">© 2026 Free Nusuk Keys Codes | Community Shared Referral Codes</p>
+        </footer>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
